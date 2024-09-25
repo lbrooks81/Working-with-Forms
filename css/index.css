@@ -1,0 +1,55 @@
+input:required:invalid
+{
+    border: 1px solid var(--bs-danger);
+}
+
+input:required:valid
+{
+    border: 1px solid var(--bs-success);
+}
+
+.feedback
+{
+    margin-top: 0.5rem;
+}
+
+.feedback.invalid
+{
+    color: var(--bs-danger);
+}
+
+.feedback.valid
+{
+    color: var(--bs-success);
+}
+
+#diet
+{
+    display: inline-block;
+    width: 40%;
+}
+
+#diet input
+{
+    margin-top: 0.5rem;
+    float: right;
+}
+
+#type-input
+{
+    width: 40%;
+}
+#type-input input
+{
+    float: right;
+}
+
+#type-input label
+{
+    margin-top: 0.5rem;
+}
+
+#sub-div
+{
+    display: none;
+}
