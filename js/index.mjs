@@ -25,25 +25,6 @@ document.addEventListener("DOMContentLoaded", () =>
         .addEventListener('change', (e) =>
     {
         const ageFeedbackElement = document.getElementById('age-feedback');
-
-        if(e.target.valueAsNumber < 18)
-        {
-            e.target.setCustomValidity("User is too young.")
-            e.target.classList.add('invalid');
-            e.target.classList.remove('valid');
-        }
-        if(e.target.valueAsNumber > 99)
-        {
-            e.target.setCustomValidity("User is too old.")
-            e.target.classList.add('invalid');
-            e.target.classList.remove('valid');
-        }
-        else
-        {
-            e.target.setCustomValidity("");
-            e.target.classList.add('valid');
-            e.target.classList.remove('invalid');
-        }
         checkValidity(e.target, ageFeedbackElement);
     });
 
@@ -104,13 +85,15 @@ document.addEventListener("DOMContentLoaded", () =>
         // document.getElementById('form').preventDefault();
         console.log('form submitted');
         document.getElementById('sub-div').style.display = 'block';
+        scrollTo(0, 0);
+        e.target.reset();
+
     });
 
     document.getElementById('form')
         .addEventListener('reset', (e) =>
     {
-        document.getElementById('form').preventDefault();
-        console.log('form reset');
+        scrollTo(0, 0);
     })
 
 });
