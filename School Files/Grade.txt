@@ -1,0 +1,6 @@
+6.3/10
+
+The age input can use the min and max constraints on the input tag rather than in the JavaScript. Either is okay, but the constraints on the input tag are natively in HTML5 implementations.
+
+(-1) Form can be submitted without accepting the terms and conditions.
+- 30% for one day late.
